@@ -4,13 +4,13 @@ about: Use this template when reporting a bug
 
 ---
 
-## Expected Behaviour
+**Expected behaviour**
 
 
-## Current Behaviour
+**Current behaviour**
 
 
-## Steps to Reproduce
+**Steps to reproduce**
 
 
-## Your Environment (version of Archivematica, OS version, etc)
+**Your environment (version of Archivematica, OS version, etc)
