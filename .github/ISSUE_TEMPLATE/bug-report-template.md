@@ -13,4 +13,4 @@ about: Use this template when reporting a bug
 **Steps to reproduce**
 
 
-**Your environment (version of Archivematica, OS version, etc)
+**Your environment (version of Archivematica, OS version, etc**
