@@ -23,4 +23,4 @@ Please make sure these steps are taken before moving this issue from Review to V
 - All PRs related to this issue are properly linked 👍
 - All PRs related to this issue have been merged 👍
 - Test plan for this issue has been implemented and passed 👍
-- Release documentation (e.g. release notes, wiki documentation, etc) regarding this issue has been written 👍
+- Documentation regarding this issue has been written and it has been added to the release notes, if needed 👍
