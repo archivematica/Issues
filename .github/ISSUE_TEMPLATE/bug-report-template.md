@@ -16,6 +16,9 @@ about: Use this template when reporting a bug
 **Your environment (version of Archivematica, OS version, etc)**
 
 
+**Log output (from the affected component/s, e.g. storage service, MCP client, etc)**
+
+
 ---
 **For Artefactual use:**
 Please make sure these steps are taken before moving this issue from Review to Verified in Waffle:
