@@ -18,7 +18,7 @@ about: Use this template when reporting a bug
 
 ---
 **For Artefactual use:**
-Please make sure these steps are taken before moving this issue from Review to Verified in Waffle:
+Please make sure these steps are taken before moving this issue from Review to Done:
 
 - All PRs related to this issue are properly linked 👍
 - All PRs related to this issue have been merged 👍
