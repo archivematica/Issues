@@ -13,14 +13,16 @@ about: Use this template when reporting a bug
 **Steps to reproduce**
 
 
-**Your environment (version of Archivematica, OS version, etc)**
-
+**Your environment (version of Archivematica, operating system, other relevant details)**
 
 ---
-**For Artefactual use:**
-Please make sure these steps are taken before moving this issue from Review to Done:
 
-- All PRs related to this issue are properly linked 👍
-- All PRs related to this issue have been merged 👍
-- Test plan for this issue has been implemented and passed 👍
-- Documentation regarding this issue has been written and it has been added to the release notes, if needed 👍
+**For Artefactual use:**
+
+Before you close this issue, you must check off the following:
+
+- [ ] All pull requests related to this issue are properly linked
+- [ ] All pull requests related to this issue have been merged
+- [ ] A testing plan for this issue has been implemented and passed (testing plan information should be included in the issue body or comments)
+- [ ] Documentation regarding this issue has been written and merged
+- [ ] Details about this issue have been added to the release notes (if applicable)
