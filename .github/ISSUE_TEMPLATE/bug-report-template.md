@@ -15,6 +15,7 @@ about: Use this template when reporting a bug
 
 **Your environment (version of Archivematica, operating system, other relevant details)**
 
+
 ---
 
 **For Artefactual use:**
