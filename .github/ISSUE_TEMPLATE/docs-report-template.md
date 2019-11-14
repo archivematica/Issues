@@ -24,5 +24,4 @@ Before you close this issue, you must check off the following:
 
 - [ ] All pull requests related to this issue are properly linked
 - [ ] All pull requests related to this issue have been merged
-- [ ] Documentation regarding this issue has been written and merged
 - [ ] Details about this issue have been added to the release notes (if applicable)
