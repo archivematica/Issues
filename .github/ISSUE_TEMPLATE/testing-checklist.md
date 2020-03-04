@@ -3,6 +3,13 @@ name: Testing checklist template
 about: Use this template to create an issue for regression testing
 ---
 
+## Version being tested
+
+archivematica_src_am_version: [specify commit here]
+
+archivematica_src_ss_version: [specify commit here]
+
+
 ## 1 - Transfer Types
 
 ### 1.1
