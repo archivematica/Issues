@@ -1,8 +1,11 @@
 ---
 name: Bug report template
 about: Use this template when reporting a bug
-
 ---
+
+<!--- If this issue relates to a security vulnerability in Archivematica or any of the related repositories, DO NOT file the issue here. Please see the SECURITY.md file at https://github.com/archivematica/Issues for information on how to safely report a security vulnerability. --->
+
+<!--- Please title your issue as a problem statement, starting with "Problem:". Check existing issues for examples. --->
 
 **Expected behaviour**
 
