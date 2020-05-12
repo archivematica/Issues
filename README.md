@@ -19,5 +19,5 @@ See the [LICENSE](LICENSE) file for details.
 ## Security
 
 If you have a security concern about Archivematica or any of its companion
-repositories, please do not file it here. See the [SECURITY](SECURITY.md) file
-in this repository for directions on how to report security issues.
+repositories, please do not file it here. Please see the [Archivematica security policy](https://github.com/artefactual/archivematica/security/policy)
+for information on how to safely report a vulnerability.
