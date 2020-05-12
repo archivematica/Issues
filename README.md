@@ -3,7 +3,7 @@ Welcome to the Issues repo for the Archivematica project.
 
 This repository is the best place to find or file issues related to Archivematica.  It can be used to describe a bug, a proposed enhancement or feature, and to help determine the roadmap for future releases of Archivematica.
 
-Information about how to use this repository can be found in the [wiki](https://github.com/archivematica/Issues/wiki) and the [CONTRIBUTING](CONTRIBUTING.md) file.
+For more information about this repository, see the [CONTRIBUTING](CONTRIBUTING.md) file.
 
 ## Archivematica
 [Archivematica](https://www.archivematica.org/)
