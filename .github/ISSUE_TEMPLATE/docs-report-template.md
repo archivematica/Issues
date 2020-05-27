@@ -3,7 +3,7 @@ name: Documentation report template
 about: Use this template when reporting an issue in the documentation
 ---
 
-<!--- If this issue relates to a security vulnerability in Archivematica or any of the related repositories, DO NOT file the issue here. Please see the security policy at https://github.com/archivematica/Issues/security for information on how to safely report a security vulnerability. --->
+<!--- If this issue relates to a security vulnerability in Archivematica or any of the related repositories, DO NOT file the issue here. Please see the security policy at https://github.com/archivematica/Issues/security/policy for information on how to safely report a security vulnerability. --->
 
 <!--- Please title your issue as a problem statement, starting with "Problem:". Check existing issues for examples. --->
 
