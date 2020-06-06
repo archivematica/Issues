@@ -105,7 +105,9 @@ When *SampleTransfer/ISODiskImage* is processed using the Disk Image transfer ty
 When the three Dataverse sample transfers (*SampleTransfers/Dataverse/AStudyOfMyAfternoonDrinks*, *SampleTransfers/Dataverse/NDSAStaffingReport*, *SampleTransfers/Dataverse/XRayScansOfPolyodonSpathula*) are processed using the Dataverse transfer type AND Archivematica is not set to delete packages after extraction
 - [ ] Microservice: parse external files succeeds AND
 - [ ] Dataverse metadata is parsed into the METS, e.g. DDI information for author and institution AND
-- [ ] All standard AIP structure and METS structure criteria apply## 2 - Transfer Variants
+- [ ] All standard AIP structure and METS structure criteria apply
+
+## 2 - Transfer Variants
 
 ### 2.1
 
@@ -278,7 +280,9 @@ When the premis.xml file is imported into Archivematica after the Objects are in
 Given that a transfer contains an identifiers.json file (*SampleTransfers/DemoTransferCSV*)
 
 When the identifiers.json file is imported into Archivematica after the Objects are ingested
-- [ ] Then the identifiers from the JSON file are mapped as objectIdentifiers in the METS file## 3 - Checksums & Integrity Checking
+- [ ] Then the identifiers from the JSON file are mapped as objectIdentifiers in the METS file
+
+## 3 - Checksums & Integrity Checking
 
 ### 3.1
 
@@ -309,7 +313,9 @@ When a transfer includes invalid external checksums
 When a transfer includes valid external checksums
 (*SampleTransfers/DemoTransferCSV*)
 - [ ] Then the job "Verify metadata directory checksums" on the Transfer tab will complete successfully AND
-- [ ] The stdout will read Comparison was OK for each checksum file## 4 - Virus scanning
+- [ ] The stdout will read Comparison was OK for each checksum file
+
+## 4 - Virus scanning
 
 ### 4.1
 
@@ -384,7 +390,9 @@ When a transfer contains files with non-ASCII characters in the file name as wel
 - [ ] Then the "Change transfer filenames" microservice will complete successfully AND
 - [ ] the AIP will contain a name cleanup log AND
 - [ ] a name cleanup PREMIS event will be present in the METS AND
-- [ ] the METS will contain descriptive metadata for each of the files described in the metadata.csv## 6 - File Identification
+- [ ] the METS will contain descriptive metadata for each of the files described in the metadata.csv
+
+## 6 - File Identification
 
 ### 6.1
 
@@ -515,7 +523,9 @@ When a transfer is processed with "Perform file format identification (Transfer)
 
 When a transfer is processed with "Perform file format identification (Transfer)" set to No
 - [ ] Then the standard output for the job "Identify file format" will be "Skipping file format identification" AND
-- [ ] there will be no format identification PREMIS events for the transfer objects in the METS## 7 - Package Extraction
+- [ ] there will be no format identification PREMIS events for the transfer objects in the METS
+
+## 7 - Package Extraction
 
 ### 7.1
 
@@ -573,7 +583,9 @@ When a transfer containing a package (*SampleTransfers/OfficeDocs*) is processed
 **External tools**: null
 
 When a transfer containing a package (*SampleTransfers/OfficeDocs*) is processed with "Extract packages" set to Yes and "Delete packages after extraction" set to No
-- [ ] The resulting AIP will contain the original package## 8 - Characterization
+- [ ] The resulting AIP will contain the original package
+
+## 8 - Characterization
 
 ### 8.1
 
@@ -638,7 +650,9 @@ Given that a MediaConch policy has been created and added to Archivematica
 
 When a transfer containing material that meets the policy criteria is processed with "Perform policy checks on originals" set to Yes
 - [ ] Then the policy check will complete successfully AND
-- [ ] a validation PREMIS event for the policy check will be created## 10 - Examine contents
+- [ ] a validation PREMIS event for the policy check will be created
+
+## 10 - Examine contents
 
 ### 10.1
 
@@ -655,7 +669,9 @@ Given that a transfer contains a file containing personally identifying informat
 When a transfer is processed with "Examine contents" set to Yes
 - [ ] Then the Examine contents microservice will complete successfully AND
 - [ ] the AIP will contain Bulk Extractor logs
-(See also: 14.7)## 11 - Normalization
+(See also: 14.7)
+
+## 11 - Normalization
 
 ### 11.1
 
@@ -865,7 +881,9 @@ Given that a transfer contains a file that can be transcribed (*SampleTransfers/
 
 When a transfer is processed with "Transcribe files (OCR)" set to Yes
 - [ ] Then the Transcription microservice will complete successfully AND
-- [ ] the AIP will contain a text file of the transcribed contents in the /metadata/OCRfiles/ directory## 12 - Performance & Resilience
+- [ ] the AIP will contain a text file of the transcribed contents in the /metadata/OCRfiles/ directory
+
+## 12 - Performance & Resilience
 
 ### 12.1
 
@@ -949,7 +967,9 @@ When a user clicks on the Remove button for all transfers/SIPs on the Transfer o
 **External tools**: null
 
 We could add a variety of failure scenarios here -- e.g. if SS is down? or elasticSearch etc?
-null## 13 - Add Metadata
+null
+
+## 13 - Add Metadata
 
 ### 13.1
 
@@ -996,7 +1016,9 @@ When they click on the metadata icon for a transfer/SIP proir to the metadata re
 Given that the accession number field is filled out for a new transfer
 
 When the transfer is processed
-- [ ] Then the accession number will end up in METS as a registration event outcome detail note.## 14 - Backlog
+- [ ] Then the accession number will end up in METS as a registration event outcome detail note.
+
+## 14 - Backlog
 
 ### 14.1
 
@@ -1044,7 +1066,9 @@ When the user searches the backlog using the search interface on the Backlog tab
 Given that a transfer is in the backlog
 
 When the user creates a delete request and the delete request is approved in the Storage Service
-- [ ] Then the transfer should be removed from the backlog## 15 - Appraisal
+- [ ] Then the transfer should be removed from the backlog
+
+## 15 - Appraisal
 
 ### 15.1
 
@@ -1467,7 +1491,9 @@ When the user selects the parent record and clicks on "Finalize arrangement"
 - [ ] any updated metadata/record structure should be applied in ArchivesSpace AND
 - [ ] the digital objects should be added to the ArchivesSpace resources/child records as Instances
 - [ ] the material should be added to ArchivesSpace- [ ]- [ ]
-(- [ ]- [ ] if the ArchivesSpace-DSpace integration is configured)## 16 - Access integrations
+(- [ ]- [ ] if the ArchivesSpace-DSpace integration is configured)
+
+## 16 - Access integrations
 
 ### 16.1
 
@@ -1648,7 +1674,9 @@ Given that a transfer includes a metadata.csv
 
 When "Upload DIP to CONTENTdm" is selected during the Upload DIP microservice
 - [ ] Then a simple.txt or compound.txt file will be added to the DIP AND
-- [ ] the simple.txt/compound.txt file will contain the descriptive metadata from the CSV## 17 - Archival Storage
+- [ ] the simple.txt/compound.txt file will contain the descriptive metadata from the CSV
+
+## 17 - Archival Storage
 
 ### 17.1
 
@@ -1912,7 +1940,9 @@ Given that a storage location has a replicator location connected to it
 
 When an AIP is stored in the storage location
 - [ ] Then the AIP will be saved in the storage location AND
-- [ ] a second copy of the AIP will be saved in the replicator location## 18 - Preservation Planning
+- [ ] a second copy of the AIP will be saved in the replicator location
+
+## 18 - Preservation Planning
 
 ### 18.1
 
@@ -1980,7 +2010,9 @@ Given that a user has edited a command
 When the user wants to revert to the previous command
 - [ ] Then the user can click on "Revision history" AND
 - [ ] the user can select the previous version that they would like to revert to AND
-- [ ] the task output and METS will show that the reverted version of the command was run, if applicable## 19 - Access
+- [ ] the task output and METS will show that the reverted version of the command was run, if applicable
+
+## 19 - Access
 
 ### 19.1
 
@@ -1998,7 +2030,9 @@ When the user looks at the Access tab
 - [ ] Then each item uploaded to AtoM should be present
 - [ ] and the DIP URL should be correct- [ ]- [ ]
 - [ ] and the Delete button will delete the record from the table but not the records from AtoM
-(- [ ]- [ ] note: there is a known issue where /sword/deposits is being inserted in the URL)## 20 - Administration
+(- [ ]- [ ] note: there is a known issue where /sword/deposits is being inserted in the URL)
+
+## 20 - Administration
 
 ### 20.1
 
@@ -2198,7 +2232,9 @@ When the user views the dashboard
 
 When the user checks the version on Administration > Version
 - [ ] Then the version number should be correct AND
-- [ ] the Agent code should correspond with the version## 21 - Users & Permissions
+- [ ] the Agent code should correspond with the version
+
+## 21 - Users & Permissions
 
 ### 21.1
 
@@ -2243,7 +2279,9 @@ When the user goes to the Administration tab
 **External tools**: null
 
 When LDAP is configured
-null## 22 - Failure Reports & Notifications
+null
+
+## 22 - Failure Reports & Notifications
 
 ### 22.1
 
@@ -2275,7 +2313,9 @@ When the user views Administration > Failures
 Given that a user has a valid email address
 
 When a transfer fails
-- [ ] Then the user will receive an emailed version of the failure report## 23 - System Config Options
+- [ ] Then the user will receive an emailed version of the failure report
+
+## 23 - System Config Options
 
 ### 23.1
 
@@ -2307,7 +2347,9 @@ Given that task output capturing has been disabled for the pipeline
 
 When the user views the task ouptut page for a job that normally has some output in the standard out and standard error streams (i.e. characterize and extract metadata)
 - [ ] Then there will be no data in the standard output stream AND
-- [ ] There will only be data in the standard error stream if the task has returned a non-zero exit code (i.e. it failed)## 24 - Storage Service
+- [ ] There will only be data in the standard error stream if the task has returned a non-zero exit code (i.e. it failed)
+
+## 24 - Storage Service
 
 ### 24.1
 
@@ -2385,7 +2427,9 @@ Given that a user has requested that an AIP be deleted using the Delete interfac
 When a Storage Service admin rejects the Deletion requests in the Storage Service
 - [ ] Then the AIP will not be deleted AND
 - [ ] the AIP's status the Archival Storage tab in the dashboard will be set back to Stored AND
-- [ ] a record of the decision will appear in the Closed requests table## 25 - METS Validation
+- [ ] a record of the decision will appear in the Closed requests table
+
+## 25 - METS Validation
 
 ### 25.1
 
