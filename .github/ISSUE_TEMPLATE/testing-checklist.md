@@ -2527,6 +2527,25 @@ When the user goes to the Administration tab
 When LDAP is configured
 null
 
+
+### 21.4
+
+**Severity**: null
+
+**Current coverage in AMAUAT**: None
+
+**AMAUAT tests**: null
+
+**External tools**: null
+
+When CAS is configured
+
+- [ ] Then attempting to access Archivematica in the browser when not yet authenticated redirects the user to a CAS server for authentication AND
+- [ ] After successfully authenticating on the CAS server, the user is logged into Archivematica AND
+- [ ] A new user account is created for the user if one did not already exist AND
+- [ ] Logging out from Archivematica ends the Archivematica session and logs the user out on the CAS server
+
+
 ## 22 - Failure Reports & Notifications
 
 ### 22.1
