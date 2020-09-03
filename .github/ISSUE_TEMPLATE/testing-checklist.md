@@ -429,7 +429,6 @@ When a transfer contains files with non-ASCII characters in the file name as wel
 - [ ] Then the "Change transfer filenames" microservice will complete successfully AND
 - [ ] the AIP will contain a name cleanup log AND
 - [ ] a name cleanup PREMIS event will be present in the METS AND
-- [ ] the METS will contain descriptive metadata for each of the files described in the metadata.csv
 
 ## 6 - File Identification
 
