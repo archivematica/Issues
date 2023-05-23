@@ -2,12 +2,11 @@
 name: Testing checklist template
 about: Use this template to create an issue for regression testing
 ---
-
 ## 1 - Transfer Types
 
 ### 1.1
 
-**Severity**: High
+**Sev**: High
 
 **Current coverage in AMAUAT**: Excellent
 
@@ -19,11 +18,9 @@ When *SampleTransfers/Images* is processed using the Standard transfer type
 - [ ] All microservices execute successfully
 - [ ] All standard AIP structure and METS structure criteria apply
 
-
-
 ### 1.2
 
-**Severity**: null
+**Sev**: null
 
 **Current coverage in AMAUAT**: null
 
@@ -36,11 +33,9 @@ When *SampleTransfer/ZippedDirectoryTransfers/DemoTransferCSV.zip* is processed 
 - [ ] All microservices execute successfully
 - [ ] All standard AIP structure and METS structure criteria apply
 
-
-
 ### 1.3
 
-**Severity**: High
+**Sev**: High
 
 **Current coverage in AMAUAT**: Excellent
 
@@ -53,11 +48,9 @@ When *SampleTransfers/UnzippedBag* is processed using the Unzipped Bag transfer 
 - [ ] All standard AIP structure and METS structure criteria apply AND
 - [ ] The contents of bag-info.txt (if any) are parsed into METS
 
-
-
 ### 1.4
 
-**Severity**: High
+**Sev**: High
 
 **Current coverage in AMAUAT**: None
 
@@ -70,11 +63,9 @@ When *SampleTransfer/ZippedBag.zip* is processed using the Zipped Bag transfer t
 - [ ] All standard AIP structure and METS structure criteria apply AND
 - [ ] The contents of bag-info.txt (if any) are parsed into METS
 
-
-
 ### 1.5
 
-**Severity**: High
+**Sev**: High
 
 **Current coverage in AMAUAT**: None
 
@@ -86,11 +77,9 @@ When *SampleTransfer/DSpaceExport* (or one of the zips contained inside) is proc
 - [ ] The Identify DSpace files microservice executes successfully AND
 - [ ] All standard AIP structure and METS structure criteria apply
 
-
-
 ### 1.6
 
-**Severity**: Medium
+**Sev**: Medium
 
 **Current coverage in AMAUAT**: None
 
@@ -102,11 +91,9 @@ When *SampleTransfer/ISODiskImage* is processed using the Disk Image transfer ty
 - [ ] The disk image metadata ends up in the AIP METS AND
 - [ ] All standard AIP structure and METS structure criteria apply
 
-
-
 ### 1.7
 
-**Severity**: Low
+**Sev**: Low
 
 **Current coverage in AMAUAT**: Excellent
 
@@ -123,7 +110,7 @@ When the three Dataverse sample transfers (*SampleTransfers/Dataverse/AStudyOfMy
 
 ### 2.1
 
-**Severity**: High
+**Sev**: High
 
 **Current coverage in AMAUAT**: Ok / Implicit
 
@@ -135,11 +122,9 @@ When a transfer containing descriptive and rights metadata (*SampleTransfer/Demo
 - [ ] The AIP METS contains descriptive metadata for each of the objects described in the metadata.csv AND
 - [ ] The AIP METS contains rights metadata for each of the objects described in the rights.csv
 
-
-
 ### 2.2
 
-**Severity**: High
+**Sev**: High
 
 **Current coverage in AMAUAT**: Ok / Implicit
 
@@ -150,11 +135,9 @@ When a transfer containing descriptive and rights metadata (*SampleTransfer/Demo
 When a Transfer containing Submission Documentation (*SampleTransfer/DemoTransferCSV*) is processed
 - [ ] Submission documentation is listed in the METS with fileGrp USE="submissionDocumentation"
 
-
-
 ### 2.3
 
-**Severity**: Medium
+**Sev**: Medium
 
 **Current coverage in AMAUAT**: None
 
@@ -165,11 +148,9 @@ When a Transfer containing Submission Documentation (*SampleTransfer/DemoTransfe
 When a transfer containing multi-level descriptive metadata (*SampleTransfer/CSVmultiLevel*) is processed
 - [ ] The AIP METS contains descriptive metadata for each of the directories described in the metadata.csv
 
-
-
 ### 2.4
 
-**Severity**: High
+**Sev**: High
 
 **Current coverage in AMAUAT**: Ok / Implicit
 
@@ -180,11 +161,9 @@ When a transfer containing multi-level descriptive metadata (*SampleTransfer/CSV
 When a transfer containing descriptive metadata for individual files using a metadata.csv (*SampleTransfer/CSVmetadata*) is processed
 - [ ] The AIP METS contains descriptive metadata for each of the files described in the metadata.csv
 
-
-
 ### 2.5
 
-**Severity**: High
+**Sev**: High
 
 **Current coverage in AMAUAT**: None
 
@@ -197,11 +176,9 @@ When a transfer with files that have been manually normalized outside of Archive
 - [ ] Preservation copies should be .prk and .tif (there is no preservation copy made of the GIF) AND
 - [ ] Access copies should be .bmp, .jpg, and .jpg.
 
-
-
 ### 2.6
 
-**Severity**: High
+**Sev**: High
 
 **Current coverage in AMAUAT**: None
 
@@ -214,11 +191,9 @@ With “Normalization” set to None and “Approve normalization” set to None
 - [ ] No preservation copies should be generated (PNG is already considered a preservation format) AND
 - [ ] Access copies should be .gif
 
-
-
 ### 2.7
 
-**Severity**: Medium
+**Sev**: Medium
 
 **Current coverage in AMAUAT**: None
 
@@ -230,11 +205,9 @@ With “Normalization” set to None and “Approve normalization” set to None
 - [ ] "Job Normalize service files for access" should run AND
 - [ ] the task output should show that the service files were used to create access copies.
 
-
-
 ### 2.8
 
-**Severity**: Medium
+**Sev**: Medium
 
 **Current coverage in AMAUAT**: None
 
@@ -245,11 +218,9 @@ With “Normalization” set to None and “Approve normalization” set to None
 When *SampleTransfers/ProcessingMCP* is processed using the Standard transfer type
 - [ ] then the Transfer and Ingest processing will follow the decisions set out in the processing configuration XML file, rather than the default configuration
 
-
-
 ### 2.9
 
-**Severity**: Medium
+**Sev**: Medium
 
 **Current coverage in AMAUAT**: None
 
@@ -260,11 +231,9 @@ When *SampleTransfers/ProcessingMCP* is processed using the Standard transfer ty
 When *SampleTransfers/BagExamples/SimpleBagWithProcessingMCP* is processed as a Zipped Bag transfer
 - [ ] then the Transfer and Ingest processing will follow the decisions set out in the processing configuration XML file, rather than the default configuration
 
-
-
 ### 2.1
 
-**Severity**: Low
+**Sev**: Low
 
 **Current coverage in AMAUAT**: None
 
@@ -275,11 +244,9 @@ When *SampleTransfers/BagExamples/SimpleBagWithProcessingMCP* is processed as a 
 When one of the directories in *SampleTransfers/StructMapTransferSamples* is processed using the Standard transfer type
 - [ ] the provided structural map will be included in the AIP METs file.
 
-
-
 ### 2.11
 
-**Severity**: null
+**Sev**: null
 
 **Current coverage in AMAUAT**: null
 
@@ -294,11 +261,9 @@ When the premis.xml file is parsed into the Archivematica METS file
 - [ ] the Events retain their original field values, including the event details AND
 - [ ] the Events are linked to the same Agents as in the PREMIS XML import file
 
-
-
 ### 2.12
 
-**Severity**: null
+**Sev**: null
 
 **Current coverage in AMAUAT**: null
 
@@ -315,7 +280,7 @@ When the identifiers.json file is imported into Archivematica after the Objects 
 
 ### 3.1
 
-**Severity**: High
+**Sev**: High
 
 **Current coverage in AMAUAT**: Excellent
 
@@ -329,11 +294,9 @@ When a transfer includes invalid external checksums
 - [ ] the stdout/stderr for the failed job describe which checksums failed AND
 - [ ] the "Failed transfer" microservice is triggerd
 
-
-
 ### 3.2
 
-**Severity**: High
+**Sev**: High
 
 **Current coverage in AMAUAT**: Excellent
 
@@ -350,7 +313,7 @@ When a transfer includes valid external checksums
 
 ### 4.1
 
-**Severity**: High
+**Sev**: High
 
 **Current coverage in AMAUAT**: None
 
@@ -363,11 +326,9 @@ When a transfer containing a virus is processed (*TestTransfers/virusTests*)
 - [ ] The job "Scan for viruses" will fail AND
 - [ ] The standard streams will report which files failed virus scanning
 
-
-
 ### 4.2
 
-**Severity**: High
+**Sev**: High
 
 **Current coverage in AMAUAT**: Excellent
 
@@ -378,13 +339,11 @@ When a transfer containing a virus is processed (*TestTransfers/virusTests*)
 When a transfer that does not contain a virus is processed
 - [ ] The job "Scan for viruses" will complete successfully
 
-
-
 ## 5 - Special Characters
 
 ### 5.1
 
-**Severity**: High
+**Sev**: High
 
 **Current coverage in AMAUAT**: None
 
@@ -397,11 +356,9 @@ When a transfer contains files and directories with non-ASCII characters in the 
 - [ ] the AIP will contain a name cleanup log AND
 - [ ] a name cleanup PREMIS event will be present in the METS
 
-
-
 ### 5.2
 
-**Severity**: Medium
+**Sev**: Medium
 
 **Current coverage in AMAUAT**: None
 
@@ -413,11 +370,9 @@ When the transfer name contains non-ASCII characters
 - [ ] Then the "Change transfer filenames" microservice will complete successfully AND
 - [ ] the transfer’s name will be changed to use ASCII characters
 
-
-
 ### 5.3
 
-**Severity**: null
+**Sev**: null
 
 **Current coverage in AMAUAT**: null
 
@@ -434,7 +389,7 @@ When a transfer contains files with non-ASCII characters in the file name as wel
 
 ### 6.1
 
-**Severity**: High
+**Sev**: High
 
 **Current coverage in AMAUAT**: Excellent
 
@@ -449,11 +404,9 @@ When a transfer is processed
 - [ ] one <premis:eventType>format identification</premis:eventType> for each file will be present in the METS
 - [ ] the premis:eventDetail will indicate that Siegfried was the tool used
 
-
-
 ### 6.2
 
-**Severity**: High
+**Sev**: High
 
 **Current coverage in AMAUAT**: None
 
@@ -468,11 +421,9 @@ AND the Processing Configuration in the Administration settings has "Perform fil
 When a transfer that includes known formats is processed (e.g. *SampleTransfers/Images*)
 - [ ] Then Siegfried successfully identifies the formats during the *Identify File Format* microservice
 
-
-
 ### 6.3
 
-**Severity**: High
+**Sev**: High
 
 **Current coverage in AMAUAT**: None
 
@@ -488,11 +439,9 @@ When a transfer includes a format that is unknown to Siegfried (try sampleTransf
 - [ ] The premis:formatName field for the premis Object has a value of unknown AND
 - [ ] There is no format identification Event for the file
 
-
-
 ### 6.4
 
-**Severity**: High
+**Sev**: High
 
 **Current coverage in AMAUAT**: None
 
@@ -507,11 +456,9 @@ When a transfer is processed with "Perform file format identification (Transfer)
 - [ ] one <premis:eventType>format identification</premis:eventType> for each file will be present in the METS
 - [ ] the premis:eventDetail will indicate that Fido was the tool used
 
-
-
 ### 6.5
 
-**Severity**: High
+**Sev**: High
 
 **Current coverage in AMAUAT**: None
 
@@ -526,11 +473,9 @@ AND the Processing Configuration in the Administration settings has "Perform fil
 When a transfer that includes known formats is processed (e.g. *SampleTransfers/Images*)
 - [ ] Then Fido successfully identifies the formats during the *Identify File Format* microservice
 
-
-
 ### 6.6
 
-**Severity**: High
+**Sev**: High
 
 **Current coverage in AMAUAT**: None
 
@@ -546,11 +491,9 @@ When a transfer includes a format that is unknown to Fido is processed with "Per
 - [ ] The premis:formatName field for the premis Object has a value of unknown AND
 - [ ] There is no format identification Event for the file
 
-
-
 ### 6.7
 
-**Severity**: High
+**Sev**: High
 
 **Current coverage in AMAUAT**: None
 
@@ -565,11 +508,9 @@ When a transfer is processed with "Perform file format identification (Transfer)
 - [ ] a format identification PREMIS event is created AND
 - [ ] the premis:eventDetail indicates that File Extension version="0.1" was the tool used
 
-
-
 ### 6.8
 
-**Severity**: Medium
+**Sev**: Medium
 
 **Current coverage in AMAUAT**: None
 
@@ -585,7 +526,7 @@ When a transfer is processed with "Perform file format identification (Transfer)
 
 ### 7.1
 
-**Severity**: High
+**Sev**: High
 
 **Current coverage in AMAUAT**: Excellent
 
@@ -600,11 +541,9 @@ When a transfer containing a package (*SampleTransfers/OfficeDocs*) is processed
 - [ ] the extracted contents are checked for further packages, which are then extracted &etc. AND
 - [ ] an unpacking PREMIS event is created
 
-
-
 ### 7.2
 
-**Severity**: Medium
+**Sev**: Medium
 
 **Current coverage in AMAUAT**: Excellent
 
@@ -617,11 +556,9 @@ When a transfer containing a broken package (*TestTransfers/broken_package_forma
 - [ ] the standard output indicates which file caused the job to fail AND
 - [ ] the "Failed transfer" microservice will be triggered
 
-
-
 ### 7.3
 
-**Severity**: Medium
+**Sev**: Medium
 
 **Current coverage in AMAUAT**: None
 
@@ -632,11 +569,9 @@ When a transfer containing a broken package (*TestTransfers/broken_package_forma
 When a transfer containing a package (*SampleTransfers/OfficeDocs*) is processed with "Extract packages" set to Yes and "Delete packages after extraction" set to Yes
 - [ ] The resulting AIP will not contain the original package
 
-
-
 ### 7.4
 
-**Severity**: Medium
+**Sev**: Medium
 
 **Current coverage in AMAUAT**: None
 
@@ -651,7 +586,7 @@ When a transfer containing a package (*SampleTransfers/OfficeDocs*) is processed
 
 ### 8.1
 
-**Severity**: High
+**Sev**: High
 
 **Current coverage in AMAUAT**: TBC - need to check which tools we use now
 
@@ -664,13 +599,11 @@ When a transfer is processed
 - [ ] the appropriate characterization tool for a given format will be triggered AND
 - [ ] the characterization tool outputs will be captured in the premis:objectCharacteristicsExtension container
 
-
-
 ## 9 - Validation
 
 ### 9.1
 
-**Severity**: High
+**Sev**: High
 
 **Current coverage in AMAUAT**: Excellent
 
@@ -684,11 +617,9 @@ When a transfer containing files that can be validated by JHOVE (*SampleTransfer
 - [ ] one <premis:eventType>validation</premis:eventType> for each file will be present in the METS AND
 - [ ] the premis:eventDetail for the validation event will indicate that JHOVE was the tool used
 
-
-
 ### 9.2
 
-**Severity**: Medium
+**Sev**: Medium
 
 **Current coverage in AMAUAT**: TBC
 
@@ -702,11 +633,9 @@ When a transfer containing Matroska files (*SampleTransfers/Matroska*) is proces
 - [ ] one <premis:eventType>validation</premis:eventType> for each file will be present in the METS AND
 - [ ] the premis:eventDetail for the validation event will indicate that MediaConch was the tool used
 
-
-
 ### 9.3
 
-**Severity**: Low
+**Sev**: Low
 
 **Current coverage in AMAUAT**: None
 
@@ -724,7 +653,7 @@ When a transfer containing material that meets the policy criteria is processed 
 
 ### 10.1
 
-**Severity**: Low
+**Sev**: Low
 
 **Current coverage in AMAUAT**: None
 
@@ -743,7 +672,7 @@ When a transfer is processed with "Examine contents" set to Yes
 
 ### 11.1
 
-**Severity**: High
+**Sev**: High
 
 **Current coverage in AMAUAT**: null
 
@@ -759,11 +688,9 @@ When the user selects "normalize for preservation and access" at the Normalize j
 - [ ] the access derivatives will be added to the DIP AND
 - [ ] normalization premis events will be added to the METS
 
-
-
 ### 11.2
 
-**Severity**: High
+**Sev**: High
 
 **Current coverage in AMAUAT**: null
 
@@ -779,11 +706,9 @@ When the user selects "normalize for preservation" at the Normalize job
 - [ ] the preservation derivatives will be added to the AIP with a UUID suffix and the appropriate file extension AND
 - [ ] normalization premis events will be added to the METS
 
-
-
 ### 11.3
 
-**Severity**: Medium
+**Sev**: Medium
 
 **Current coverage in AMAUAT**: null
 
@@ -797,11 +722,9 @@ When the user selects "normalize service files for access" at the Normalize job
 - [ ] Then the service files be used to create the access derivatives AND
 - [ ] the access derivatives will be added to the DIP
 
-
-
 ### 11.4
 
-**Severity**: High
+**Sev**: High
 
 **Current coverage in AMAUAT**: null
 
@@ -815,11 +738,9 @@ When the user selects "do not normalize" at the Normalize job
 - [ ] Then normalization will not occur AND
 - [ ] the AIP will contain originals only
 
-
-
 ### 11.5
 
-**Severity**: Medium
+**Sev**: Medium
 
 **Current coverage in AMAUAT**: null
 
@@ -836,11 +757,9 @@ And then selects "Approve" at the Approve normalization job
 - [ ] the preservation derivatives will be added to the AIP with a UUID suffix and the appropriate file extension AND
 - [ ] the access derivatives will be added to the DIP
 
-
-
 ### 11.6
 
-**Severity**: Medium
+**Sev**: Medium
 
 **Current coverage in AMAUAT**: null
 
@@ -854,11 +773,9 @@ When the user clicks on the metadata icon and then "Manual normalization event d
 - [ ] Then the user will be able to enter normalization event information for the manual normalization action AND
 - [ ] the event information will be added to the METS
 
-
-
 ### 11.7
 
-**Severity**: High
+**Sev**: High
 
 **Current coverage in AMAUAT**: null
 
@@ -872,11 +789,9 @@ When the user selects "normalize for access" at the Normalize job
 - [ ] Then access derivatives will be created and added to the DIP AND
 - [ ] the AIP will contain originals only
 
-
-
 ### 11.8
 
-**Severity**: Medium
+**Sev**: Medium
 
 **Current coverage in AMAUAT**: null
 
@@ -890,11 +805,9 @@ When the user reaches the Normalize job
 - [ ] Then the dropdown will only have two normalization options ("Normalize for preservation" and "Do not normalize") AND
 - [ ] regardless of the option picked, a DIP will be created with the access copies from the transfer
 
-
-
 ### 11.9
 
-**Severity**: Medium
+**Sev**: Medium
 
 **Current coverage in AMAUAT**: null
 
@@ -911,11 +824,9 @@ When the user reaches the Normalize job and chooses "Normalize for Preservation"
 - [ ] the AIP will contain the originals and the preservation copies as if Archivematica had normalized for preservation AND
 - [ ] the AIP will include normalization events
 
-
-
 ### 11.1
 
-**Severity**: Medium
+**Sev**: Medium
 
 **Current coverage in AMAUAT**: null
 
@@ -926,11 +837,9 @@ When the user reaches the Normalize job and chooses "Normalize for Preservation"
 When a transfer is processed with "Generate thumbnails" set to Yes
 - [ ] Then thumbnails will be created for all digital objects in the AIP
 
-
-
 ### 11.11
 
-**Severity**: Medium
+**Sev**: Medium
 
 **Current coverage in AMAUAT**: null
 
@@ -942,11 +851,9 @@ When a transfer is processed with "Generate thumbnails" set to Yes, without defa
 - [ ] Then thumbnails will be created for all digital objects in the AIP where meaningful thumbnails can be created AND
 - [ ] Thumbnails will not be created if the thumbnail would be a default icon
 
-
-
 ### 11.12
 
-**Severity**: Medium
+**Sev**: Medium
 
 **Current coverage in AMAUAT**: null
 
@@ -957,11 +864,9 @@ When a transfer is processed with "Generate thumbnails" set to Yes, without defa
 When a transfer is processed with "Generate thumbnails" set to No
 - [ ] Then no thumbnails will be created
 
-
-
 ### 11.13
 
-**Severity**: Medium
+**Sev**: Medium
 
 **Current coverage in AMAUAT**: null
 
@@ -979,7 +884,7 @@ When a transfer is processed with "Transcribe files (OCR)" set to Yes
 
 ### 12.1
 
-**Severity**: Medium
+**Sev**: Medium
 
 **Current coverage in AMAUAT**: None
 
@@ -991,11 +896,9 @@ When multiple transfers are started at the same time
 - [ ] Then Archivematica should gracefully handle processing multiple transfers at the same time
 (Note: this assumes that the Archivematica machine has enough memory and power to process the transfers; these metrics can be be scaled up significantly as needed.)
 
-
-
 ### 12.2
 
-**Severity**: Medium
+**Sev**: Medium
 
 **Current coverage in AMAUAT**: None
 
@@ -1007,11 +910,9 @@ When a transfer with a large number of files is processed
 - [ ] Then Archivematica should process the individual files in the transfer as normal
 (Note: this assumes that the Archivematica machine has enough memory and power to process the transfer; these metrics can be be scaled up significantly as needed.)
 
-
-
 ### 12.3
 
-**Severity**: Medium
+**Sev**: Medium
 
 **Current coverage in AMAUAT**: None
 
@@ -1023,11 +924,9 @@ When a large transfer is processed (20Gb+)
 - [ ] Then Archivematica should process the transfer as usual
 (Note: this assumes that the Archivematica machine has enough memory and power to process the transfer; these metrics can be be scaled up significantly as needed.)
 
-
-
 ### 12.4
 
-**Severity**: Medium
+**Sev**: Medium
 
 **Current coverage in AMAUAT**: None
 
@@ -1039,11 +938,9 @@ When a user clicks on the Remove button for a single completed transfer/SIP on t
 - [ ] Then a popup will allow the user to confirm that they want to remove the transfer/SIP AND
 - [ ] the transfer will no longer appear in the Transfer or Ingest tab
 
-
-
 ### 12.5
 
-**Severity**: Medium
+**Sev**: Medium
 
 **Current coverage in AMAUAT**: None
 
@@ -1056,11 +953,9 @@ When a user clicks on the Remove button for all transfers/SIPs on the Transfer o
 - [ ] all transfers/SIPs that have completed successfully or failed will no longer appear in the Transfer or Ingest tab AND
 - [ ] Transfers/SIPs that were rejected or are still in progress will remain in the Transfer or Ingest tab
 
-
-
 ### 12.6
 
-**Severity**: Medium
+**Sev**: Medium
 
 **Current coverage in AMAUAT**: None
 
@@ -1075,7 +970,7 @@ null
 
 ### 13.1
 
-**Severity**: Medium
+**Sev**: Medium
 
 **Current coverage in AMAUAT**: None
 
@@ -1089,11 +984,9 @@ When they click on the metadata icon for a transfer/SIP proir to the metadata re
 - [ ] Then they can add, edit, and delete metadata using the GUI form AND
 - [ ] The metadata will be written to the METS
 
-
-
 ### 13.2
 
-**Severity**: High
+**Sev**: High
 
 **Current coverage in AMAUAT**: None
 
@@ -1107,11 +1000,9 @@ When they click on the metadata icon for a transfer/SIP proir to the metadata re
 - [ ] Then they can add, edit, and delete metadata using the GUI form AND
 - [ ] The metadata will be written to the METS
 
-
-
 ### 13.3
 
-**Severity**: High
+**Sev**: High
 
 **Current coverage in AMAUAT**: None
 
@@ -1128,7 +1019,7 @@ When the transfer is processed
 
 ### 14.1
 
-**Severity**: High
+**Sev**: High
 
 **Current coverage in AMAUAT**: None
 
@@ -1143,11 +1034,9 @@ When the user downloads the transfer from the backlog
 - [ ] Then the package that is downloaded from the backlog will be a valid bag AND
 - [ ] it will contain a transfer METS file
 
-
-
 ### 14.2
 
-**Severity**: High
+**Sev**: High
 
 **Current coverage in AMAUAT**: None
 
@@ -1161,11 +1050,9 @@ When the user searches the backlog using the search interface on the Backlog tab
 - [ ] Then searches should be successful across all search parameters (file name, file extension, accession number, ingest date, SIP UUID)
 (Note: some search parameters require keyword vs phrase or vice versa; searching is case sensitive)
 
-
-
 ### 14.3
 
-**Severity**: Medium
+**Sev**: Medium
 
 **Current coverage in AMAUAT**: None
 
@@ -1182,7 +1069,7 @@ When the user creates a delete request and the delete request is approved in the
 
 ### 15.1
 
-**Severity**: High
+**Sev**: High
 
 **Current coverage in AMAUAT**: None
 
@@ -1197,11 +1084,9 @@ When the user searches using the search interface on the Appraisal tab
 - [ ] the search results should be displayed in the backlog pane
 (Note: some search parameters require keyword vs phrase or vice versa; searching is case sensitive)
 
-
-
 ### 15.2
 
-**Severity**: Medium
+**Sev**: Medium
 
 **Current coverage in AMAUAT**: None
 
@@ -1214,11 +1099,9 @@ Given that the user has searched for some material to populate the backlog pane
 When the user selects Collapse all/Expand all
 - [ ] Then all directories should collapse or expand
 
-
-
 ### 15.3
 
-**Severity**: Medium
+**Sev**: Medium
 
 **Current coverage in AMAUAT**: None
 
@@ -1231,11 +1114,9 @@ Given that a user has selected several files in the Backlog pane
 When the user selects Deselect all
 - [ ] Then the files should be deselected
 
-
-
 ### 15.4
 
-**Severity**: Medium
+**Sev**: Medium
 
 **Current coverage in AMAUAT**: None
 
@@ -1251,11 +1132,9 @@ When they add a tag to the selected files
 - [ ] The tags should be visible in the File list pane AND
 - [ ] The user can create a SIP using the tags from the Arrangement pane
 
-
-
 ### 15.5
 
-**Severity**: Low
+**Sev**: Low
 
 **Current coverage in AMAUAT**: None
 
@@ -1269,11 +1148,9 @@ When they click on the minus sign to remove the tag in the Backlog pane or File 
 - [ ] Then the tags should be removed AND
 - [ ] the tag count in the Analysis pane should update accordingly
 
-
-
 ### 15.6
 
-**Severity**: Medium
+**Sev**: Medium
 
 **Current coverage in AMAUAT**: null
 
@@ -1287,11 +1164,9 @@ When they create a SIP from the tags in the Arrangement tab
 - [ ] Then the SIP should be started AND
 - [ ] the SIP should automatically appear on the Ingest tab
 
-
-
 ### 15.7
 
-**Severity**: Low
+**Sev**: Low
 
 **Current coverage in AMAUAT**: None
 
@@ -1305,11 +1180,9 @@ When the user opens the Report on the Analysis pane > Objects
 - [ ] Then the report should list all selected formats AND
 - [ ] the report should update accurately when files are selected/deselected
 
-
-
 ### 15.8
 
-**Severity**: Low
+**Sev**: Low
 
 **Current coverage in AMAUAT**: None
 
@@ -1323,11 +1196,9 @@ When the user opens the Visualizations on the Analysis pane > Objects
 - [ ] Then the pie chart should show all selected formats by total number of files or by total size of files AND
 - [ ] the visualization should update accurately when files are selected/deselected
 
-
-
 ### 15.9
 
-**Severity**: Low
+**Sev**: Low
 
 **Current coverage in AMAUAT**: None
 
@@ -1342,11 +1213,9 @@ And the transfer was processed with "Examine contents" set to Yes
 When the user selects PII or Credit card numbers on the Analysis pane > Examine contents
 - [ ] Then a list of files that contain credit card numbers or social security numbers will be displayed
 
-
-
 ### 15.1
 
-**Severity**: Low
+**Sev**: Low
 
 **Current coverage in AMAUAT**: None
 
@@ -1361,11 +1230,9 @@ When the user selects Preview File on the Analysis pane
 - [ ] the user should be able to expand file preview pane for an image if using Firefox AND
 - [ ] non-previewable files should download for preview
 
-
-
 ### 15.11
 
-**Severity**: Low
+**Sev**: Low
 
 **Current coverage in AMAUAT**: None
 
@@ -1377,11 +1244,9 @@ When the user selects "Show path" in the File list pane
 - [ ] Then the path column will be toggled on or off AND
 - [ ] The path will contain the full filepath of the file
 
-
-
 ### 15.12
 
-**Severity**: Low
+**Sev**: Low
 
 **Current coverage in AMAUAT**: None
 
@@ -1396,11 +1261,9 @@ When the user clicks on "Add directory" in the Arrangement pane
 - [ ] the directory will appear in the Arrangement pane AND
 - [ ] the user can drag files from the Backlog pane to the new directory
 
-
-
 ### 15.13
 
-**Severity**: Low
+**Sev**: Low
 
 **Current coverage in AMAUAT**: None
 
@@ -1415,11 +1278,9 @@ When the user selects the directory and then clicks on "Add directory"
 - [ ] the directory will appear in the Arrangement pane as a subdirectory of the first directory AND
 - [ ] the user can drag files from the Backlog pane to the new directory
 
-
-
 ### 15.14
 
-**Severity**: Low
+**Sev**: Low
 
 **Current coverage in AMAUAT**: None
 
@@ -1432,11 +1293,9 @@ Given that there is a directory structure in the Arrangement pane
 When the user wants to navigate through the directories
 - [ ] Then the user can click on the yellow folder icon to navigate through directories
 
-
-
 ### 15.15
 
-**Severity**: Low
+**Sev**: Low
 
 **Current coverage in AMAUAT**: None
 
@@ -1450,11 +1309,9 @@ When the user selects a file and then clicks on "Edit Metadata"
 - [ ] Then a popup window will appear where the user can select the AtoM level of description for the directory or file AND
 - [ ] when the SIP is finalized and the DIP is sent to AtoM, the level of description will be added to the record in AtoM
 
-
-
 ### 15.16
 
-**Severity**: Low
+**Sev**: Low
 
 **Current coverage in AMAUAT**: None
 
@@ -1468,11 +1325,9 @@ When the user selects a directory/file and then clicks on "Delete selected"
 - [ ] Then a popup will allow the user to confirm the deletion AND
 - [ ] the directory/file will be deleted
 
-
-
 ### 15.17
 
-**Severity**: Low
+**Sev**: Low
 
 **Current coverage in AMAUAT**: None
 
@@ -1486,11 +1341,9 @@ When the user selects a directory and clicks on "Create SIP"
 - [ ] Then selected directory and contents will be turned into a SIP AND
 - [ ] processing will continue on the Ingest tab
 
-
-
 ### 15.18
 
-**Severity**: Low
+**Sev**: Low
 
 **Current coverage in AMAUAT**: None
 
@@ -1503,11 +1356,9 @@ Given that there are directories/files in the Arrangement pane but things have g
 When the user clicks "Reload"
 - [ ] Then the Arrangement pane should be reloaded without having to refresh the page
 
-
-
 ### 15.19
 
-**Severity**: Low
+**Sev**: Low
 
 **Current coverage in AMAUAT**: None
 
@@ -1520,11 +1371,9 @@ Given that the ArchivesSpace integration is configured
 When a user clicks on "Search ArchivesSpace" in the ArchivesSpace pane
 - [ ] Then ArchivesSpace resources should be displayed
 
-
-
 ### 15.2
 
-**Severity**: Low
+**Sev**: Low
 
 **Current coverage in AMAUAT**: None
 
@@ -1539,12 +1388,9 @@ When the user selects "Add new child record"
 - [ ] the child record will appear in the Appraisal tab AND
 - [ ] when the arrangement is finalized and the information sent to ArchivesSpace, the child record will be added to ArchivesSpace- [ ]- [ ]
 (- [ ]- [ ] if the ArchivesSpace-DSpace integration is configured)
-
-
-
 ### 15.21
 
-**Severity**: Low
+**Sev**: Low
 
 **Current coverage in AMAUAT**: None
 
@@ -1557,11 +1403,9 @@ Given that a user has selected an ArchivesSpace resource
 When the user selects "Add new digital object"
 - [ ] Then a digital object will be created
 
-
-
 ### 15.22
 
-**Severity**: Low
+**Sev**: Low
 
 **Current coverage in AMAUAT**: None
 
@@ -1576,11 +1420,9 @@ When the user drags and drops a file from the backlog pane onto the digital obje
 - [ ] when the arrangement is finalized and the information sent to ArchivesSpace, the file information will be added as an Instance- [ ]- [ ]
 (- [ ]- [ ] if the ArchivesSpace-DSpace integration is configured)
 
-
-
 ### 15.23
 
-**Severity**: Low
+**Sev**: Low
 
 **Current coverage in AMAUAT**: None
 
@@ -1595,11 +1437,9 @@ When the user selects "Edit rights metadata"
 - [ ] when the arrangement is finalized and the information sent to ArchivesSpace, the rights metadata will be added to ArchivesSpace- [ ]- [ ]
 (- [ ]- [ ] if the ArchivesSpace-DSpace integration is configured)
 
-
-
 ### 15.24
 
-**Severity**: Low
+**Sev**: Low
 
 **Current coverage in AMAUAT**: None
 
@@ -1614,11 +1454,9 @@ When the user selects "Edit metadata"
 - [ ] when the arrangement is finalized and the information sent to ArchivesSpace, the metadata will be added to ArchivesSpace- [ ]- [ ]
 (- [ ]- [ ] if the ArchivesSpace-DSpace integration is configured)
 
-
-
 ### 15.25
 
-**Severity**: Low
+**Sev**: Low
 
 **Current coverage in AMAUAT**: None
 
@@ -1632,11 +1470,9 @@ When the user selects "Delete selected"
 - [ ] Then a popup will appear where the user can confirm the deletion AND
 - [ ] when the user confirms the deletion, the child record will be deleted
 
-
-
 ### 15.26
 
-**Severity**: Low
+**Sev**: Low
 
 **Current coverage in AMAUAT**: None
 
@@ -1657,7 +1493,7 @@ When the user selects the parent record and clicks on "Finalize arrangement"
 
 ### 16.1
 
-**Severity**: High
+**Sev**: High
 
 **Current coverage in AMAUAT**: None
 
@@ -1670,11 +1506,9 @@ Given that the AtoM integration is configured
 When a user uploads a DIP to AtoM
 - [ ] Then the digital objects will be uploaded to the AtoM target description
 
-
-
 ### 16.2
 
-**Severity**: High
+**Sev**: High
 
 **Current coverage in AMAUAT**: None
 
@@ -1688,11 +1522,9 @@ When the user uploads the DIP to AtoM
 - [ ] Then the descriptive metadata will be uploaded to the appropriate target description in AtoM
 (Note: collection-level description if aggregate metadata provided; object-level description if individual object metadata provided)
 
-
-
 ### 16.3
 
-**Severity**: Medium
+**Sev**: Medium
 
 **Current coverage in AMAUAT**: null
 
@@ -1707,11 +1539,9 @@ When the DIP is uploaded to AtoM
 - [ ] Then the arrangement should be reflected in AtoM AND
 - [ ] a logical structMap reflecting the arrangement will be created in the METS
 
-
-
 ### 16.4
 
-**Severity**: Medium
+**Sev**: Medium
 
 **Current coverage in AMAUAT**: None
 
@@ -1726,11 +1556,9 @@ When the DIP is uploaded to AtoM
 - [ ] Then the levels of description should be reflected in AtoM AND
 - [ ] a logical structMap reflecting the arrangement will be created in the METS
 
-
-
 ### 16.5
 
-**Severity**: Medium
+**Sev**: Medium
 
 **Current coverage in AMAUAT**: None
 
@@ -1744,11 +1572,9 @@ When the DIP is uploaded to AtoM
 - [ ] Then Archivematica should not prompt the user to enter the slug during the Upload DIP microservice AND
 - [ ] the digital objects will be uploaded to the AtoM target description
 
-
-
 ### 16.6
 
-**Severity**: Low
+**Sev**: Low
 
 **Current coverage in AMAUAT**: None
 
@@ -1761,11 +1587,9 @@ Given that the Binder integration is configured
 When a user creates a DIP and uploads it to Binder
 - [ ] Then the DIP will be uploaded to the target artwork or technology record in Binder
 
-
-
 ### 16.7
 
-**Severity**: Low
+**Sev**: Low
 
 **Current coverage in AMAUAT**: None
 
@@ -1779,11 +1603,9 @@ When the DIP is uploaded to Binder
 - [ ] Then Archivematica should not prompt the user to enter the artwork or technology record identifier during the Upload DIP microservice AND
 - [ ] the DIP will be uploaded to the Binder target description
 
-
-
 ### 16.8
 
-**Severity**: Low
+**Sev**: Low
 
 **Current coverage in AMAUAT**: None
 
@@ -1799,11 +1621,9 @@ When the user selects "Upload DIP to ArchivesSpace" from the Upload DIP microser
 - [ ] the user can search for and navigate through resources AND
 - [ ] the user can pair digital objects to resources
 
-
-
 ### 16.9
 
-**Severity**: Low
+**Sev**: Low
 
 **Current coverage in AMAUAT**: None
 
@@ -1817,11 +1637,9 @@ When the user confirms that matching is complete
 
 - [ ] Then the DIP information will be attached to the ArchivesSpace resource as an Instance
 
-
-
 ### 16.1
 
-**Severity**: Low
+**Sev**: Low
 
 **Current coverage in AMAUAT**: None
 
@@ -1838,11 +1656,9 @@ When the user selects "Upload DIP to ArchivesSpace" from the Upload DIP microser
 - [ ] clicking on "Finish matching" will send the DIP information to the ArchivesSpace AND
 - [ ] the DIP information will be attached to the ArchivesSpace archival object as an Instance
 
-
-
 ### 16.11
 
-**Severity**: Medium
+**Sev**: Medium
 
 **Current coverage in AMAUAT**: None
 
@@ -1860,7 +1676,7 @@ When "Upload DIP to CONTENTdm" is selected during the Upload DIP microservice
 
 ### 17.1
 
-**Severity**: High
+**Sev**: High
 
 **Current coverage in AMAUAT**: Excellent
 
@@ -1873,11 +1689,9 @@ Given that an AIP storage location has been configured
 When a user selects the storage location from the Store AIP dropdown
 - [ ] Then the AIP will be stored in the selected storage location
 
-
-
 ### 17.2
 
-**Severity**: Medium
+**Sev**: Medium
 
 **Current coverage in AMAUAT**: null
 
@@ -1892,11 +1706,9 @@ When the user selects to reject the transfer/SIP
 - [ ] the AIP is sent to the rejected directory AND
 - [ ] the AIP can be accessed from the rejected directory
 
-
-
 ### 17.3
 
-**Severity**: High
+**Sev**: High
 
 **Current coverage in AMAUAT**: None
 
@@ -1911,11 +1723,9 @@ When the user searches using the search interface on the Archival Storage tab
 - [ ] the search results should be displayed in the Archival Storage tab
 (Note: some search parameters require keyword vs phrase or vice versa)
 
-
-
 ### 17.4
 
-**Severity**: High
+**Sev**: High
 
 **Current coverage in AMAUAT**: null
 
@@ -1928,11 +1738,9 @@ Given that there are AIPs in storage
 When the user does a search with "Show files?" selected
 - [ ] Then the search results should show individual files
 
-
-
 ### 17.5
 
-**Severity**: High
+**Sev**: High
 
 **Current coverage in AMAUAT**: Excellent
 
@@ -1945,11 +1753,9 @@ Given that an AIP has been stored
 When the user clicks on the name or UUID of the AIP
 - [ ] Then the user should be taken to the AIP information page
 
-
-
 ### 17.6
 
-**Severity**: Medium
+**Sev**: Medium
 
 **Current coverage in AMAUAT**: null
 
@@ -1965,11 +1771,9 @@ When the user clicks on "Create an AIC"
 - [ ] the AIC microservices will complete successfully AND
 - [ ] the resulting AIC AIP will conform to the criteria for an AIC
 
-
-
 ### 17.7
 
-**Severity**: High
+**Sev**: High
 
 **Current coverage in AMAUAT**: null
 
@@ -1982,11 +1786,9 @@ Given that an AIP has been stored and the user has navigated to the AIP storage 
 When the user clicks on "Download"
 - [ ] Then the AIP should be downloaded
 
-
-
 ### 17.8
 
-**Severity**: Medium
+**Sev**: Medium
 
 **Current coverage in AMAUAT**: null
 
@@ -1999,11 +1801,9 @@ Given that an AIP has been stored and the user has navigated to the AIP storage 
 When the user clicks on "View" to view the METS file
 - [ ] Then the METS file should be downloaded
 
-
-
 ### 17.9
 
-**Severity**: Medium
+**Sev**: Medium
 
 **Current coverage in AMAUAT**: null
 
@@ -2016,11 +1816,9 @@ Given that an AIP has been stored and the user has navigated to the AIP storage 
 When the user clicks on "View" to view the pointer file
 - [ ] Then the pointer file should be downloaded
 
-
-
 ### 17.10
 
-**Severity**: Medium
+**Sev**: Medium
 
 **Current coverage in AMAUAT**: null
 
@@ -2035,11 +1833,9 @@ When the user wants to upload the digital object metadata for the AIP objects to
 - [ ] the user can use the Upload DIP action at the bottom of the page by entering the slug for the AtoM description into the *Insert slug* textbox and clicking *Upload* AND
 - [ ] archival descriptions will be created in AtoM that contain the digital object metadata, but no digital objects
 
-
-
 ### 17.11
 
-**Severity**: High
+**Sev**: High
 
 **Current coverage in AMAUAT**: Ok / Implicit (test does not include adding metadata)
 
@@ -2056,11 +1852,9 @@ When the user selects "Metadata re-ingest" from the AIP information page
 - [ ] the new AIP over-writes the old one in storage
 - [ ] <premis:eventType>reingestion</premis:eventType> is present in the resulting METS
 
-
-
 ### 17.12
 
-**Severity**: High
+**Sev**: High
 
 **Current coverage in AMAUAT**: Ok / Implicit (test does not specify DIP creation)
 
@@ -2077,11 +1871,9 @@ When the user selects "Partial re-ingest" from the AIP information page
 - [ ] the new AIP over-writes the old one in storage
 - [ ] <premis:eventType>reingestion</premis:eventType> is present in the resulting METS
 
-
-
 ### 17.13
 
-**Severity**: High
+**Sev**: High
 
 **Current coverage in AMAUAT**: Excellent
 
@@ -2099,11 +1891,9 @@ When the user selects "Full re-ingest" from the AIP information page
 - [ ] <premis:eventType>reingestion</premis:eventType> is present in the resulting METS AND
 - [ ] any new PREMIS events are present in the resulting METS
 
-
-
 ### 17.14
 
-**Severity**: High
+**Sev**: High
 
 **Current coverage in AMAUAT**: null
 
@@ -2117,11 +1907,9 @@ When the user requests deletion of the AIP from the AIP information page
 - [ ] Then the status of the AIP will be "Deletion requested"
 (See 24.2 for other half of the deletion test)
 
-
-
 ### 17.15
 
-**Severity**: null
+**Sev**: null
 
 **Current coverage in AMAUAT**: null
 
@@ -2136,11 +1924,9 @@ When an AIP is stored in the encrypted storage location
 - [ ] the AIP can be downloaded AND
 - [ ] the AIP can be reingested and downloaded again
 
-
-
 ### 17.16
 
-**Severity**: null
+**Sev**: null
 
 **Current coverage in AMAUAT**: null
 
@@ -2158,7 +1944,7 @@ When an AIP is stored in the storage location
 
 ### 18.1
 
-**Severity**: Medium
+**Sev**: Medium
 
 **Current coverage in AMAUAT**: null
 
@@ -2173,11 +1959,9 @@ When the user enables Fido
 - [ ] the Fido command will be enabled AND
 - [ ] when file identification runs next, Fido will be used instead of Siegfried
 
-
-
 ### 18.2
 
-**Severity**: High
+**Sev**: High
 
 **Current coverage in AMAUAT**: null
 
@@ -2193,11 +1977,9 @@ When a transfer that would normally call that command is processed
 - [ ] the METS file will not show that the command was run AND
 - [ ] the command can be re-enabled later
 
-
-
 ### 18.3
 
-**Severity**: Medium
+**Sev**: Medium
 
 **Current coverage in AMAUAT**: null
 
@@ -2211,11 +1993,9 @@ When a transfer that calls the command is processed
 - [ ] Then the edited version of the command will run AND
 - [ ] the task output and METS will show that the updated command ran, if applicable
 
-
-
 ### 18.4
 
-**Severity**: High
+**Sev**: High
 
 **Current coverage in AMAUAT**: None
 
@@ -2234,7 +2014,7 @@ When the user wants to revert to the previous command
 
 ### 19.1
 
-**Severity**: Low
+**Sev**: Low
 
 **Current coverage in AMAUAT**: null
 
@@ -2254,7 +2034,7 @@ When the user looks at the Access tab
 
 ### 20.1
 
-**Severity**: High
+**Sev**: High
 
 **Current coverage in AMAUAT**: null
 
@@ -2269,11 +2049,9 @@ When the user selects "Edit"
 - [ ] the user will be able to make changes AND
 - [ ] the user can save the form
 
-
-
 ### 20.2
 
-**Severity**: High
+**Sev**: High
 
 **Current coverage in AMAUAT**: None
 
@@ -2286,11 +2064,9 @@ Given that the user has changed some values in the default processing configurat
 When a transfer is started from the dashboard
 - [ ] Then the transfer should follow the decisions as set in the default processing configuration
 
-
-
 ### 20.3
 
-**Severity**: Medium
+**Sev**: Medium
 
 **Current coverage in AMAUAT**: null
 
@@ -2303,11 +2079,9 @@ Given that the user is on the Administration tab > Processing configuration
 When the user selects "Download"
 - [ ] Then an XML file containing the processing configuration decisions set in the config form will be downloaded
 
-
-
 ### 20.4
 
-**Severity**: Medium
+**Sev**: Medium
 
 **Current coverage in AMAUAT**: null
 
@@ -2320,11 +2094,9 @@ Given that the user has changed some values in the default processing configurat
 When the user selects "Reset"
 - [ ] Then the configuration will be reset to the standard Archivematica pre-sets (see docs for pre-set info https://www.archivematica.org/en/docs/latest/user-manual/administer/dashboard-admin/#processing-config-fields)
 
-
-
 ### 20.5
 
-**Severity**: Medium
+**Sev**: Medium
 
 **Current coverage in AMAUAT**: null
 
@@ -2339,11 +2111,9 @@ When the user selects "Add"
 - [ ] the user can select decision points AND
 - [ ] the user can save the form
 
-
-
 ### 20.6
 
-**Severity**: Low
+**Sev**: Low
 
 **Current coverage in AMAUAT**: null
 
@@ -2356,11 +2126,9 @@ Given that a custom processing configuration has been created
 When the user selects "Delete" for the custom processing configuration
 - [ ] Then the custom processing configuration will be deleted
 
-
-
 ### 20.7
 
-**Severity**: null
+**Sev**: null
 
 **Current coverage in AMAUAT**: null
 
@@ -2373,11 +2141,9 @@ Given that the user is on the Administration tab > Storage locations
 When the user increases or decreases the amount of material in a given storage location
 - [ ] Then the Used storage value will increase or decrease correspondingly
 
-
-
 ### 20.8
 
-**Severity**: Medium
+**Sev**: Medium
 
 **Current coverage in AMAUAT**: None
 
@@ -2390,11 +2156,9 @@ Given that the user is on the Administration tab > Processing storage usage
 When the user selects "Calculate disk usage”
 - [ ] Then the disk usage will be calculated and displayed
 
-
-
 ### 20.9
 
-**Severity**: Medium
+**Sev**: Medium
 
 **Current coverage in AMAUAT**: None
 
@@ -2409,11 +2173,9 @@ When the user selects "Clear" for one of the storage locations
 - [ ] the folder will be cleared AND
 - [ ] the usage will reset to 4.0KB
 
-
-
 ### 20.1
 
-**Severity**: High
+**Sev**: High
 
 **Current coverage in AMAUAT**: null
 
@@ -2426,11 +2188,9 @@ Given that the credentials have been added to the DIP Upload page for an AtoM, B
 When the user uploads a DIP to those systems
 - [ ] Then DIP upload will be successful
 
-
-
 ### 20.11
 
-**Severity**: High
+**Sev**: High
 
 **Current coverage in AMAUAT**: Excellent
 
@@ -2443,11 +2203,9 @@ Given that the PREMIS agent identifier value, name, and type have been set
 When the user creates an AIP
 - [ ] Then the agent identifier value, name, and type are properly recorded in the METS
 
-
-
 ### 20.12
 
-**Severity**: High
+**Sev**: High
 
 **Current coverage in AMAUAT**: None
 
@@ -2460,11 +2218,9 @@ Given that the user has changed a language in Administration > Languages
 When the user views the dashboard
 - [ ] Then the microservice tasks and interface items should appear in that language (translation completeness permitting)
 
-
-
 ### 20.13
 
-**Severity**: Medium
+**Sev**: Medium
 
 **Current coverage in AMAUAT**: None
 
@@ -2480,7 +2236,7 @@ When the user checks the version on Administration > Version
 
 ### 21.1
 
-**Severity**: High
+**Sev**: High
 
 **Current coverage in AMAUAT**: None
 
@@ -2494,11 +2250,9 @@ When the user goes to Administration > Users
 - [ ] Then the user will be able to add a new user, edit an existing user, or delete a user
 
 
-
-
 ### 21.2
 
-**Severity**: High
+**Sev**: High
 
 **Current coverage in AMAUAT**: null
 
@@ -2511,11 +2265,9 @@ Given that a user is not an administrator
 When the user goes to the Administration tab
 - [ ] Then the user will not see the Users menu item
 
-
-
 ### 21.3
 
-**Severity**: Medium
+**Sev**: Medium
 
 **Current coverage in AMAUAT**: None
 
@@ -2526,10 +2278,9 @@ When the user goes to the Administration tab
 When LDAP is configured
 null
 
-
 ### 21.4
 
-**Severity**: null
+**Sev**: null
 
 **Current coverage in AMAUAT**: None
 
@@ -2544,12 +2295,11 @@ When CAS is configured
 - [ ] A new user account is created for the user if one did not already exist AND
 - [ ] Logging out from Archivematica ends the Archivematica session and logs the user out on the CAS server
 
-
 ## 22 - Failure Reports & Notifications
 
 ### 22.1
 
-**Severity**: High
+**Sev**: High
 
 **Current coverage in AMAUAT**: None
 
@@ -2564,11 +2314,9 @@ When the user views Administration > Failures
 - [ ] the user can click on the report to see which job failed AND
 - [ ] the user can delete the failure report
 
-
-
 ### 22.2
 
-**Severity**: High
+**Sev**: High
 
 **Current coverage in AMAUAT**: None
 
@@ -2585,7 +2333,7 @@ When a transfer fails
 
 ### 23.1
 
-**Severity**: Medium
+**Sev**: Medium
 
 **Current coverage in AMAUAT**: None
 
@@ -2599,11 +2347,9 @@ When the user opens the dashboard
 - [ ] Then the Backlog, Appraisal, and Archival storage tabs are not visible
 - [ ] the Index AIP job will not run (? need to confirm)
 
-
-
 ### 23.2
 
-**Severity**: Low
+**Sev**: Low
 
 **Current coverage in AMAUAT**: None
 
@@ -2621,7 +2367,7 @@ When the user views the task ouptut page for a job that normally has some output
 
 ### 24.1
 
-**Severity**: High
+**Sev**: High
 
 **Current coverage in AMAUAT**: None
 
@@ -2635,11 +2381,9 @@ When the user views the Packages tab of the Storage Service
 - [ ] Then the user will see data in the Fixity Date and Fixity Status columns AND
 - [ ] The information in those columns will be correct
 
-
-
 ### 24.2
 
-**Severity**: High
+**Sev**: High
 
 **Current coverage in AMAUAT**: None
 
@@ -2652,11 +2396,9 @@ Given that there is a DIP in storage
 When the user deletes the DIP from the Packages tab
 - [ ] Then the DIP will be deleted successfully
 
-
-
 ### 24.3
 
-**Severity**: Medium
+**Sev**: Medium
 
 **Current coverage in AMAUAT**: None
 
@@ -2667,11 +2409,9 @@ When the user deletes the DIP from the Packages tab
 AIP Recovery
 null
 
-
-
 ### 24.4
 
-**Severity**: High
+**Sev**: High
 
 **Current coverage in AMAUAT**: null
 
@@ -2686,11 +2426,9 @@ When a Storage Service admin approves the Deletion requests in the Storage Servi
 - [ ] the entry for the AIP will be removed from the Archival Storage tab in the dashboard AND
 - [ ] a record of the decision will appear in the Closed requests table
 
-
-
 ### 24.5
 
-**Severity**: High
+**Sev**: High
 
 **Current coverage in AMAUAT**: null
 
@@ -2709,7 +2447,7 @@ When a Storage Service admin rejects the Deletion requests in the Storage Servic
 
 ### 25.1
 
-**Severity**: High
+**Sev**: High
 
 **Current coverage in AMAUAT**: None
 
@@ -2723,11 +2461,9 @@ When the user validates the METS file against the PREMIS in METS Toolbox validat
 - [ ] Then no errors are reported AND
 - [ ] The validation is successful
 
-
-
 ### 25.2
 
-**Severity**: High
+**Sev**: High
 
 **Current coverage in AMAUAT**: Ok / Implicit (test does not specify all METS/PREMIS sections)
 
