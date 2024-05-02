@@ -168,8 +168,8 @@ When a transfer containing a virus is processed (*TestTransfers/virusTests*)
 
 When a transfer contains files and directories with non-ASCII characters in the file/directory name (*TestTransfers/badNames*)
 - [ ] Then the "Change transfer filenames" microservice will complete successfully AND
-- [ ] the AIP will contain a name cleanup log AND
-- [ ] a name cleanup PREMIS event will be present in the METS
+- [ ] the AIP will contain a filename change log AND
+- [ ] a filename change PREMIS event will be present in the METS
 
 ### 4.2
 
@@ -183,8 +183,8 @@ When the transfer name contains non-ASCII characters
 
 When a transfer contains files with non-ASCII characters in the file name as well as a metadata.csv file (*SampleTransfers/DiacriticsTest*)
 - [ ] Then the "Change transfer filenames" microservice will complete successfully AND
-- [ ] the AIP will contain a name cleanup log AND 
-- [ ] a name cleanup PREMIS event will be present in the METS AND
+- [ ] the AIP will contain a filename change log AND
+- [ ] a filename change PREMIS event will be present in the METS AND
 - [ ] the METS will contain descriptive metadata for each of the files described in the metadata.csv
 
 ## 5 - File Identification
