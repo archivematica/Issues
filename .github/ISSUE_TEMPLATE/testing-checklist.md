@@ -107,7 +107,7 @@ When a transfer with files that have been manually normalized outside of Archive
 
 With “Normalization” set to None and “Approve normalization” set to None in the default processing config, process a transfer using *SampleTransfers/AccessCopies*, “Job: Normalize” should only give three options - choose “Normalize for preservation”.
 - [ ] Originals should be .png AND
-- [ ] No preservation copies should be generated (PNG is already considered a preservation format) AND 
+- [ ] No preservation copies should be generated (PNG is already considered a preservation format) AND
 - [ ] Access copies should be .gif
 
 ### 2.7
@@ -115,7 +115,7 @@ With “Normalization” set to None and “Approve normalization” set to None
 **Severity**: Medium
 
 With “Normalization” set to None and “Approve normalization” set to None in the default processing config, run SampleTransfers/ServiceCopies transfer and choose “Normalize service files for access”.
-- [ ] "Job Normalize service files for access" should run AND 
+- [ ] "Job Normalize service files for access" should run AND
 - [ ] the task output should show that the service files were used to create access copies.
 
 ### 2.8
@@ -534,93 +534,9 @@ Given that the accession number field is filled out for a new transfer
 When the transfer is processed
 - [ ] Then the accession number will end up in METS as a registration event outcome detail note.
 
-## 12 - Backlog
+## 12 - Access integrations
 
 ### 12.1
-
-**Severity**: High
-
-Given that a user has sent a transfer to backlog at “Job: Create SIP(s)?"
-
-When the user downloads the transfer from the backlog
-- [ ] Then the package that is downloaded from the backlog will be a valid bag AND
-- [ ] it will contain a transfer METS file
-
-### 12.2
-
-**Severity**: High
-
-Given that a transfer is in the backlog
-
-When the user searches the backlog using the search interface on the Backlog tab
-- [ ] Then searches should be successful across all search parameters (file name, file extension, accession number, ingest date, SIP UUID)
-(Note: some search parameters require keyword vs phrase or vice versa; searching is case sensitive)
-
-### 12.3
-
-**Severity**: Medium
-
-Given that a transfer is in the backlog
-
-When the user creates a delete request and the delete request is approved in the Storage Service
-- [ ] Then the transfer should be removed from the backlog
-
-## 13 - Appraisal
-
-### 13.1
-
-**Severity**: High
-
-Given that a transfer is in the backlog
-
-When the user searches using the search interface on the Appraisal tab
-- [ ] Then searches should be successful across all search parameters (file name, file extension, accession number, ingest date, SIP UUID) AND
-- [ ] the search results should be displayed in the backlog pane
-(Note: some search parameters require keyword vs phrase or vice versa; searching is case sensitive)
-
-### 13.2
-
-**Severity**: Medium
-
-Given that the user has searched for some material to populate the backlog pane
-
-When the user selects Collapse all/Expand all
-- [ ] Then all directories should collapse or expand
-
-### 13.3
-
-**Severity**: Medium
-
-Given that a user has selected several files in the Backlog pane
-
-When the user selects Deselect all
-- [ ] Then the files should be deselected
-
-### 13.4
-
-**Severity**: Medium
-
-Given that a user has selected several files in the Backlog pane
-
-When they add a tag to the selected files
-- [ ] Then the tags added to the items should be visible in backlog pane as well as in dropdown AND
-- [ ] The tags should be visible in the Analysis pane's Tags tab AND
-- [ ] The tags should be visible in the File list pane AND
-- [ ] The user can create a SIP using the tags from the Arrangement pane
-
-### 13.5
-
-**Severity**: Medium
-
-Given that a user has added tags to several items
-
-When they create a SIP from the tags in the Arrangement tab
-- [ ] Then the SIP should be started AND
-- [ ] the SIP should automatically appear on the Ingest tab
-
-## 14 - Access integrations
-
-### 14.1
 
 **Severity**: High
 
@@ -629,7 +545,7 @@ Given that the AtoM integration is configured
 When a user uploads a DIP to AtoM
 - [ ] Then the digital objects will be uploaded to the AtoM target description
 
-### 14.2
+### 12.2
 
 **Severity**: High
 
@@ -639,27 +555,7 @@ When the user uploads the DIP to AtoM
 - [ ] Then the descriptive metadata will be uploaded to the appropriate target description in AtoM
 (Note: collection-level description if aggregate metadata provided; object-level description if individual object metadata provided)
 
-### 14.3
-
-**Severity**: Medium
-
-Given that a user has arranged digital objects/directories using the Arrangement pane of the Appraisal tab
-
-When the DIP is uploaded to AtoM
-- [ ] Then the arrangement should be reflected in AtoM AND
-- [ ] a logical structMap reflecting the arrangement will be created in the METS
-
-### 14.4
-
-**Severity**: Medium
-
-Given that a user has applied levels of description to digital objects/directories using the Arrangement pane of the Appraisal tab
-
-When the DIP is uploaded to AtoM
-- [ ] Then the levels of description should be reflected in AtoM AND
-- [ ] a logical structMap reflecting the arrangement will be created in the METS
-
-### 14.5
+### 12.3
 
 **Severity**: Medium
 
@@ -669,7 +565,7 @@ When the DIP is uploaded to AtoM
 - [ ] Then Archivematica should not prompt the user to enter the slug during the Upload DIP microservice AND
 - [ ] the digital objects will be uploaded to the AtoM target description
 
-### 14.6
+### 12.4
 
 **Severity**: Medium
 
@@ -679,9 +575,9 @@ When "Upload DIP to CONTENTdm" is selected during the Upload DIP microservice
 - [ ] Then a simple.txt or compound.txt file will be added to the DIP AND
 - [ ] the simple.txt/compound.txt file will contain the descriptive metadata from the CSV
 
-## 15 - Archival Storage
+## 13 - Archival Storage
 
-### 15.1
+### 13.1
 
 **Severity**: Medium
 
@@ -692,7 +588,7 @@ When the user wants to upload the digital object metadata for the AIP objects to
 - [ ] the user can use the Upload DIP action at the bottom of the page by entering the slug for the AtoM description into the *Insert slug* textbox and clicking *Upload* AND
 - [ ] archival descriptions will be created in AtoM that contain the digital object metadata, but no digital objects
 
-### 15.2
+### 13.2
 
 **Severity**: Medium
 
@@ -703,7 +599,7 @@ When the user selects to reject the transfer/SIP
 - [ ] the AIP is sent to the rejected directory AND
 - [ ] the AIP can be accessed from the rejected directory
 
-### 15.3
+### 13.3
 
 **Severity**: High
 
@@ -712,7 +608,7 @@ Given that there are AIPs in storage
 When the user does a search with "Show files?" selected
 - [ ] These "Select columns" options also apply to the “Show files” display option (except “AIC”, “File Count” “Created”, and “Encrypted”).
 
-### 15.4
+### 13.4
 
 **Severity**: Medium
 
@@ -721,7 +617,7 @@ Given that the user has done a search in the Archival Storage tab
 When the user clicks on "Create an AIC"
 - [ ] The select and deselect choices persist between user sessions.
 
-### 15.5
+### 13.5
 
 **Severity**: High
 
@@ -730,7 +626,7 @@ Given that an AIP has been stored and the user has navigated to the AIP storage 
 When the user clicks on "Download"
 - [ ] Then the AIP should be downloaded
 
-### 15.6
+### 13.6
 
 **Severity**: Medium
 
@@ -739,7 +635,7 @@ Given that an AIP has been stored and the user has navigated to the AIP storage 
 When the user clicks on "View" to view the METS file
 - [ ] Then the METS file should be downloaded
 
-### 15.7
+### 13.7
 
 **Severity**: Medium
 
@@ -748,7 +644,7 @@ Given that an AIP has been stored and the user has navigated to the AIP storage 
 When the user clicks on "View" to view the pointer file
 - [ ] Then the pointer file should be downloaded
 
-### 15.8
+### 13.8
 
 **Severity**: High
 
@@ -765,7 +661,7 @@ When the user selects "Metadata re-ingest" from the AIP information page
 - [ ] the new AIP over-writes the old one in storage
 - [ ] <premis:eventType>reingestion</premis:eventType> is present in the resulting METS
 
-### 15.9
+### 13.9
 
 **Severity**: High
 
@@ -782,7 +678,7 @@ When the user selects "Partial re-ingest" from the AIP information page
 - [ ] the new AIP over-writes the old one in storage
 - [ ] <premis:eventType>reingestion</premis:eventType> is present in the resulting METS
 
-### 15.10
+### 13.10
 
 **Severity**: High
 
@@ -792,7 +688,7 @@ When the user requests deletion of the AIP from the AIP information page
 - [ ] Then the status of the AIP will be "Deletion requested"
 (See 24.2 for other half of the deletion test)
 
-### 15.11
+### 13.11
 
 Given that an encrypted storage location exists
 
@@ -801,7 +697,7 @@ When an AIP is stored in the encrypted storage location
 - [ ] the AIP can be downloaded AND
 - [ ] the AIP can be reingested and downloaded again
 
-### 15.12
+### 13.12
 
 Given that a storage location has a replicator location connected to it
 
@@ -809,9 +705,9 @@ When an AIP is stored in the storage location
 - [ ] Then the AIP will be saved in the storage location AND
 - [ ] a second copy of the AIP will be saved in the replicator location
 
-## 16 - Preservation Planning
+## 14 - Preservation Planning
 
-### 16.1
+### 14.1
 
 **Severity**: Medium
 
@@ -822,7 +718,7 @@ When the user enables Fido
 - [ ] the Fido command will be enabled AND
 - [ ] when file identification runs next, Fido will be used instead of Siegfried
 
-### 16.2
+### 14.2
 
 **Severity**: High
 
@@ -834,7 +730,7 @@ When a transfer that would normally call that command is processed
 - [ ] the METS file will not show that the command was run AND
 - [ ] the command can be re-enabled later
 
-### 16.3
+### 14.3
 
 **Severity**: Medium
 
@@ -844,7 +740,7 @@ When a transfer that calls the command is processed
 - [ ] Then the edited version of the command will run AND
 - [ ] the task output and METS will show that the updated command ran, if applicable
 
-### 16.4
+### 14.4
 
 **Severity**: High
 
@@ -855,9 +751,9 @@ When the user wants to revert to the previous command
 - [ ] the user can select the previous version that they would like to revert to AND
 - [ ] the task output and METS will show that the reverted version of the command was run, if applicable
 
-## 17 - Administration
+## 15 - Administration
 
-### 17.1
+### 15.1
 
 **Severity**: High
 
@@ -868,7 +764,7 @@ When the user selects "Edit"
 - [ ] the user will be able to make changes AND
 - [ ] the user can save the form
 
-### 17.2
+### 15.2
 
 **Severity**: High
 
@@ -877,7 +773,7 @@ Given that the user has changed some values in the default processing configurat
 When a transfer is started from the dashboard
 - [ ] Then the transfer should follow the decisions as set in the default processing configuration
 
-### 17.3
+### 15.3
 
 **Severity**: Medium
 
@@ -886,7 +782,7 @@ Given that the user is on the Administration tab > Processing configuration
 When the user selects "Download"
 - [ ] Then an XML file containing the processing configuration decisions set in the config form will be downloaded
 
-### 17.4
+### 15.4
 
 **Severity**: Medium
 
@@ -895,7 +791,7 @@ Given that the user has changed some values in the default processing configurat
 When the user selects "Reset"
 - [ ] Then the configuration will be reset to the standard Archivematica pre-sets (see docs for pre-set info https://www.archivematica.org/en/docs/latest/user-manual/administer/dashboard-admin/#processing-config-fields)
 
-### 17.5
+### 15.5
 
 **Severity**: Medium
 
@@ -906,14 +802,14 @@ When the user selects "Add"
 - [ ] the user can select decision points AND
 - [ ] the user can save the form
 
-### 17.6
+### 15.6
 
 Given that the user is on the Administration tab > Storage locations
 
 When the user increases or decreases the amount of material in a given storage location
 - [ ] Then the Used storage value will increase or decrease correspondingly
 
-### 17.7
+### 15.7
 
 **Severity**: Medium
 
@@ -922,7 +818,7 @@ Given that the user is on the Administration tab > Processing storage usage
 When the user selects "Calculate disk usage”
 - [ ] Then the disk usage will be calculated and displayed
 
-### 17.8
+### 15.8
 
 **Severity**: Medium
 
@@ -933,7 +829,7 @@ When the user selects "Clear" for one of the storage locations
 - [ ] the folder will be cleared AND
 - [ ] the usage will reset to 4.0KB
 
-### 17.9
+### 15.9
 
 **Severity**: High
 
@@ -942,7 +838,7 @@ Given that the credentials have been added to the DIP Upload page for an AtoM, B
 When the user uploads a DIP to those systems
 - [ ] Then DIP upload will be successful
 
-### 17.10
+### 15.10
 
 **Severity**: High
 
@@ -951,7 +847,7 @@ Given that the user has changed a language in Administration > Languages
 When the user views the dashboard
 - [ ] Then the microservice tasks and interface items should appear in that language (translation completeness permitting)
 
-### 17.11
+### 15.11
 
 **Severity**: Medium
 
@@ -959,9 +855,9 @@ When the user checks the version on Administration > Version
 - [ ] Then the version number should be correct AND
 - [ ] the Agent code should correspond with the version
 
-## 18 - Users & Permissions
+## 16 - Users & Permissions
 
-### 18.1
+### 16.1
 
 **Severity**: High
 
@@ -970,7 +866,7 @@ Given that a user is an administrator
 When the user goes to Administration > Users
 - [ ] Then the user will be able to add a new user, edit an existing user, or delete a user
 
-### 18.2
+### 16.2
 
 **Severity**: High
 
@@ -979,14 +875,14 @@ Given that a user is not an administrator
 When the user goes to the Administration tab
 - [ ] Then the user will not see the Users menu item
 
-### 18.3
+### 16.3
 
 **Severity**: Medium
 
 When LDAP is configured
 
 
-### 18.4
+### 16.4
 
 **Severity**: Medium
 
@@ -996,9 +892,9 @@ When CAS is configured
 - [ ] A new user account is created for the user if one did not already exist AND
 - [ ] Logging out from Archivematica ends the Archivematica session and logs the user out on the CAS server
 
-## 19 - Failure Reports & Notifications
+## 17 - Failure Reports & Notifications
 
-### 19.1
+### 17.1
 
 **Severity**: High
 
@@ -1009,7 +905,7 @@ When the user views Administration > Failures
 - [ ] the user can click on the report to see which job failed AND
 - [ ] the user can delete the failure report
 
-### 19.2
+### 17.2
 
 **Severity**: High
 
@@ -1018,21 +914,21 @@ Given that a user has a valid email address
 When a transfer fails
 - [ ] Then the user will receive an emailed version of the failure report
 
-## 20 - System Config Options
+## 18 - System Config Options
 
-### 20.1
+### 18.1
 
 **Severity**: Medium
 
 Given that indexing has been disabled for a pipeline
 
 When the user opens the dashboard
-- [ ] Then the Backlog, Appraisal, and Archival storage tabs are not visible
+- [ ] Then the Backlog and Archival storage tabs are not visible
 - [ ] the Index AIP job will not run (task output will read `Skipping indexing: AIPs indexing is currently disabled.`)
 
-## 21 - Storage Service
+## 19 - Storage Service
 
-### 21.1
+### 19.1
 
 **Severity**: High
 
@@ -1042,7 +938,7 @@ When the user views the Packages tab of the Storage Service
 - [ ] Then the user will see data in the Fixity Date and Fixity Status columns AND
 - [ ] The information in those columns will be correct
 
-### 21.2
+### 19.2
 
 **Severity**: High
 
@@ -1051,14 +947,14 @@ Given that there is a DIP in storage
 When the user deletes the DIP from the Packages tab
 - [ ] Then the DIP will be deleted successfully
 
-### 21.3
+### 19.3
 
 **Severity**: Medium
 
 AIP Recovery
 
 
-### 21.4
+### 19.4
 
 **Severity**: High
 
@@ -1069,7 +965,7 @@ When a Storage Service admin approves the Deletion requests in the Storage Servi
 - [ ] the entry for the AIP will be removed from the Archival Storage tab in the dashboard AND
 - [ ] a record of the decision will appear in the Closed requests table
 
-### 21.5
+### 19.5
 
 **Severity**: High
 
@@ -1080,9 +976,9 @@ When a Storage Service admin rejects the Deletion requests in the Storage Servic
 - [ ] the AIP's status the Archival Storage tab in the dashboard will be set back to Stored AND
 - [ ] a record of the decision will appear in the Closed requests table
 
-## 22 - METS Validation
+## 20 - METS Validation
 
-### 22.1
+### 20.1
 
 **Severity**: High
 
@@ -1094,7 +990,7 @@ When the user validates the METS file against the PREMIS in METS Toolbox validat
 - [ ] Then no errors are reported AND
 - [ ] The validation is successful
 
-### 22.2
+### 20.2
 
 **Severity**: High
 
